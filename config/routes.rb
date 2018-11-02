@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
 #Update
   #Get the form
-    get 'tasks/:id/edit', to: 'tasks#edit'
+    get 'tasks/:id/edit', to: 'tasks#edit', as: :edit_task
   #Update the tasks
     patch 'tasks/:id', to: 'tasks#update'
 

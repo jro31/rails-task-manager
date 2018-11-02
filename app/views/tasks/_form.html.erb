@@ -3,5 +3,8 @@
   <%= f.text_field :title %>
   <%= f.label :details %>
   <%= f.text_field :details %>
+  <% if params[:action] == "edit" %>
+    <!-- ADD THE CHECKBOX FOR THE EDIT PAGE HERE -->
+  <% end %>
   <%= f.submit %>
 <% end %>
