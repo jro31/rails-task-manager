@@ -2,8 +2,9 @@
 <form action="/tasks" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="title">What is your task?</label>
-  <input type="text" name="title" id="title">
+  <input type="text" name="task[title]" id="title">
   <label for="details">Add some details</label>
-  <input type="text" name="details" id="details">
+  <input type="text" name="task[details]" id="details">
+  <% #hidden_field_tag :completed, false %>
   <input type="submit">
 </form>
